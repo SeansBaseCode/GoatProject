@@ -1,5 +1,6 @@
 #header-one{
-    color: purple;
+    color: rgb(42, 0, 121);
+    white-space: nowrap;
 }
 
 .center {
@@ -11,12 +12,29 @@
 
 .paragraph-blue-text {
     color: rgb(0, 64, 255);
+    font-size: x-large;
+    text-shadow: 
+      1px 1px 0 black, 
+     -1px -1px 0 black,  
+      1px -1px 0 black, 
+     -1px 1px 0 black;  
 }
 
 .paragraph-text-layout {
-    font-size: large;
+    font-size: larger;
     text-align: center;
+    
 }
+
+.outlined-text {
+    font-size: 36px;
+    color: rgb(0, 0, 0);  
+    text-shadow: 
+      1px 1px 0 white, 
+     -1px -1px 0 white,  
+      1px -1px 0 white, 
+     -1px 1px 0 white;  
+  }
 
 /* Add a black background color to the top navigation */
 .topnav {
@@ -50,3 +68,12 @@
     margin: 20px;
 }
 
+@keyframes flash {
+    10% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  .flashing-text {
+    animation: flash 1s infinite; 
+  }
